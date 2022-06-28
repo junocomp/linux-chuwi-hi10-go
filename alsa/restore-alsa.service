@@ -1,0 +1,11 @@
+[Unit]
+Description=Restore ALSA volume for Chuwi Hi10 GO
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/restore-alsa
+RemainAfterExit=true
+#RestartSec=1
+
+[Install]
+WantedBy=multi-user.target

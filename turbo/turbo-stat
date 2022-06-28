@@ -1,0 +1,16 @@
+#!/bin/bash
+# Juno Computers
+
+INTEL="/sys/devices/system/cpu/intel_pstate/no_turbo"
+ACPI="/sys/devices/system/cpu/cpufreq/boost"
+FREQ="$(cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver | sort -u)"
+
+case "$FREQ" in
+    acpi-cpufreq)
+    grep -q "1" $ACPI && echo "Turbo On" || echo "Turbo Off"
+    ;;
+    intel_pstate|intel_cpufreq)
+    grep -q "0" $INTEL && echo "Turbo On" || echo "Turbo Off"
+    ;;
+esac
+

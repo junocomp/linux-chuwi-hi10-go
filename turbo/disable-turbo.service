@@ -1,0 +1,11 @@
+[Unit]
+Description=Turbo Boost service for Nvidia and Intel
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/turbo-off
+RemainAfterExit=true
+#RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
