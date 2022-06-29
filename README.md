@@ -6,8 +6,8 @@ Linux on Chuwi Hi10 GO (N5100)
 
 ## Run the Installer
 ```cd linux-chuwi-hi10-go```
-```chmod a+x install.sh```
-```./install.sh```
+<br>```chmod a+x install.sh```
+<br>```./install.sh```
 
 Restart when completed
 
