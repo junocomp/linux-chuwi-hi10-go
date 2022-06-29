@@ -1,6 +1,9 @@
 # linux-chuwi-hi10-go
 Linux on Chuwi Hi10 GO (N5100)
 
+## Installer
+The installer currently works with Debian and Ubuntu
+
 ## Clone Repo
 ```git clone https://github.com/giovannicaligaris/linux-chuwi-hi10-go```
 
