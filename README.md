@@ -2,12 +2,12 @@
 Linux on Chuwi Hi10 GO (N5100)
 
 ## Clone Repo
-git clone https://github.com/giovannicaligaris/linux-chuwi-hi10-go
+```git clone https://github.com/giovannicaligaris/linux-chuwi-hi10-go```
 
 ## Run the Installer
-```cd linux-chuwi-hi10-go
-chmod a+x install.sh
-./install.sh```
+```cd linux-chuwi-hi10-go```
+```chmod a+x install.sh```
+```./install.sh```
 
 Restart when completed
 
