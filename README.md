@@ -14,3 +14,6 @@ Restart when completed
 ## Suspend
 Currently suspend is not working, hopefully with Kernel 5.19 it will. 
 Make sure to disable Suspend from Settings.
+
+## Links
+Linux Chuwi's forum <a href="https://forum.chuwi.com/t/chuwi-hi10-go-and-linux/25515">https://forum.chuwi.com/t/chuwi-hi10-go-and-linux/25515</a>
