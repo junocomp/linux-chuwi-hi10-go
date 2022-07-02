@@ -47,7 +47,7 @@ case "$OS" in
     apt install -o Dpkg::Options::="--force-overwrite" plocate dconf-editor youtube-dl lsb-release qtwayland5 fonts-open-sans ffmpeg libavcodec58 gstreamer1.0-gl mesa-va-drivers mesa-vulkan-drivers git curl powersupply network-manager-config-connectivity-debian linux-cpupower intel-media-va-driver-non-free thermald pulseaudio-module-gsettings bolt acpid flatpak openssh-server irqbalance -y;
     
     dpkg -s gnome-control-center &> /dev/null;
-    if [ $? -eq 0 ]; then;
+    if [ $? -eq 0 ]; then
     apt install power-profiles-daemon gnome-software-plugin-flatpak -y;
     fi;
     
