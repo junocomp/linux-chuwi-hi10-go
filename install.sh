@@ -76,7 +76,7 @@ case "$OS" in
     *)
     echo "Optimizing Turbo";
     cd turbo;
-    cp juno-turbo.rules /etc/udev/rules.d/;
+    cp 20-turbo.rules /etc/udev/rules.d/;
     chmod a+x turbo-off turbo-on turbo-stat;
     cp turbo-* /usr/bin;
     cd ..;
@@ -91,7 +91,7 @@ case "$OS" in
     echo "Installing Alsa systemd";
     chmod a+x alsa/restore-alsa;
     cp alsa/restore-alsa /usr/bin;
-    cp restore-alsa.service /etc/systemd/system;
+    cp alsa/restore-alsa.service /etc/systemd/system;
     systemctl enable restore-alsa.service;
     systemctl start restore-alsa.service;
     sleep 1;
