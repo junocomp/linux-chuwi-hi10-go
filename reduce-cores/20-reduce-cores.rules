@@ -1,0 +1,14 @@
+################################ 
+#         INSTRUCTIONS         #   
+#			       #	
+# groupadd chuwi	       #
+# usermod -a -G chuwi $USER    #
+# udevadm control --reload     #
+# udevadm trigger              #
+#                              #
+################################
+
+
+SUBSYSTEM=="cpu", KERNEL=="cpu[0-9]|cpu[0-9][0-9]", PROGRAM="/bin/sh -c 'chgrp chuwi /sys%p/*'"
+SUBSYSTEM=="cpu", KERNEL=="cpu[0-9]|cpu[0-9][0-9]", PROGRAM="/bin/sh -c 'chmod g=u /sys%p/*'"
+

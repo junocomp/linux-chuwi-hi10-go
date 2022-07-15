@@ -1,0 +1,2 @@
+SUBSYSTEM=="backlight", ATTR{bl_power}=="0", KERNEL=="intel_backlight", RUN+="/usr/sbin/reduce-cores"
+SUBSYSTEM=="backlight", ATTR{bl_power}=="4", KERNEL=="intel_backlight", RUN+="/usr/sbin/reduce-cores"
