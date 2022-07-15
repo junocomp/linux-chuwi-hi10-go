@@ -1,7 +1,7 @@
 ################################ 
 #         INSTRUCTIONS         #   
-#			                         #	
-# groupadd chuwi	             #
+#			       #	
+# groupadd chuwi	       #
 # usermod -a -G chuwi $USER    #
 # udevadm control --reload     #
 # udevadm trigger              #
