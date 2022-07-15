@@ -1,0 +1,12 @@
+[Unit]
+Description=Reload Udevadm
+After=systemd-udevd.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/udevadm trigger
+#Restart=always
+#RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
